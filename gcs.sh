@@ -137,7 +137,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
   --role roles/artifactregistry.reader
 
 
-sleep 30
+sleep 120
 
 
 export PROJECT_ID=$(gcloud config get-value project)
@@ -150,7 +150,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 
 
 
-sleep 30
+sleep 120
 
 cd quicklab
 
@@ -228,7 +228,7 @@ EOF_END
 
 gcloud alpha monitoring policies create --policy-from-file="app-engine-error-percent-policy.json"
 
-sleep 30
+sleep 120
 
 cd quicklab
 
